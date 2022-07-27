@@ -45,3 +45,4 @@ Any of things that change the state of the Meal will ensure the local storage is
 
 
 
+![UI](https://raw.githubusercontent.com/Srigowri/recruiterflow-test/master/public/UI.png)

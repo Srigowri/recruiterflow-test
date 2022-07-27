@@ -16,7 +16,7 @@ export default function App(){
       Fetching meals first time on reload
     */
     async function getMeals() {
-      const mealCount = 10;
+      const mealCount = 3;
       for (let i = 0; i < mealCount; i++) {
         let meal = await getRandomMeal();
         meal = {...meal,id:nanoid()}

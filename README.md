@@ -1,8 +1,9 @@
 In the project directory, you can run:
-
+### Clone the repo locally
+### `npm install`
 ### `npm start`
 Tech Stack: HTML, CSS, ReactJS
-Libraries used: nanoid (for generation of unique ids)
+Libraries used: nanoid (for generation of unique ids), confetti 
 
 Data source for the cards: https://www.themealdb.com/api.php
 

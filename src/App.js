@@ -11,22 +11,22 @@ export default function App(){
   */
   const [meals, setMeals] = React.useState(()=>JSON.parse(localStorage.getItem("meals")) || []);
   const [click, setClick] = React.useState(false);
-  // React.useEffect(() => {
-  //   /*
-  //     Fetching meals first time on reload
-  //   */
-  //   async function getMeals() {
-  //     const mealCount = 10;
-  //     for (let i = 0; i < mealCount; i++) {
-  //       let meal = await getRandomMeal();
-  //       meal = {...meal,id:nanoid()}
-  //       setMeals((old) => [...old, meal]);
-  //     }
-  //   }    
-  //     //if none of the meals are fetched before
-  //     getMeals();
+  React.useEffect(() => {
+    /*
+      Fetching meals first time on reload
+    */
+    async function getMeals() {
+      const mealCount = 10;
+      for (let i = 0; i < mealCount; i++) {
+        let meal = await getRandomMeal();
+        meal = {...meal,id:nanoid()}
+        setMeals((old) => [...old, meal]);
+      }
+    }    
+      //if none of the meals are fetched before
+    getMeals();
       
-  // }, []);
+  }, []);
 
   // using local storage for caching
   React.useEffect(() => {

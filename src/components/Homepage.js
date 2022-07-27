@@ -18,7 +18,7 @@ export default function Homepage(props){
 
 return (<div className="homepage">
         <Confetti width="40px" height="40px" />
-        <button className="addmeal-btn" onClick={props.handleAddMeal}> Add Meal</button>      
+        <button className="addmeal-btn" onClick={props.handleAddMeal}> Add+</button>      
         <ul className="recipes-ul" id="recipes-ul">
           {element}
         </ul>   

@@ -8,6 +8,7 @@ Libraries used: nanoid (for generation of unique ids), confetti
 Data source for the cards: https://www.themealdb.com/api.php
 
 API used: https://www.themealdb.com/api/json/v1/1/random.php
+utility.js has the code for fetching API data.
 ```
 Functionalities
 1. Fetches a random list on meals and arrange them on the homepage

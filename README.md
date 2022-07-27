@@ -18,17 +18,20 @@ Functionalities
 
 
 1. Fetch Meal(s)
+
    The above api returns a JSON with meta data about the meal containing name of the recipe, image etc..
    A meal represents the object with meta data
    Meals represent array of objects (used hook to save the state)
 
 
 2. Add Meal
+
     useEffect is used to handle the side effect of fetching async from an external API
     The meal is added to the array of meals and this will change the state of the "Meal" .
     The new meal added is the first on the homepage.
 
 3. Delete Meal
+
     The meal id stored as meta data is used for this operation.
     The corresponding meal id is obtained from the event object on the enclosing HTML element and sent to a handler.
     This will change the state of the "Meal" .

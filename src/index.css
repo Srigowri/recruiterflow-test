@@ -25,7 +25,7 @@ ul{
   animation: scale 0.4s linear forwards;  
   
 }
-@keyframs scale{
+@keyframes scale{
   0%{
     transform:scale(0.5);    
   }
@@ -44,9 +44,11 @@ ul{
   cursor: pointer;
 }
 .recipes img:hover{
-  transform: scale(1.5);
+  transform: translateY(10px) scale(1.4);
   transition: transform 0.4s linear;
+
 }
+
 
 .recipes{    
   position: relative;
@@ -61,11 +63,10 @@ ul{
     letter-spacing:2px;
     margin-top: 5px;
     font-weight: bold;
-    max-width: 280px;
+    max-width: 270px;
     text-overflow: ellipsis;
     white-space:nowrap;
     overflow: hidden;
-  
 }
 
 .recipes .delmeal-btn{
@@ -101,8 +102,8 @@ ul{
 .addmeal-btn:active, .scroll-up:active{
   transform: scale(0.9);  
 }
- .scroll-up{
-   position: fixed;
-   bottom: 40px;
-   right: 40px;
- }
+.scroll-up{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}

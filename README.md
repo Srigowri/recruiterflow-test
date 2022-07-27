@@ -1,4 +1,4 @@
-In the project directory, you can run:
+
 ### Clone the repo locally
 ### `npm install`
 ### `npm start`
